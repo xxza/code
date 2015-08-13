@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' /> -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <nav class="navbar-default visible-xs">
+        <div class="col-sm-12">
+                  <div class="navbar-header pull-right">
+                    <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                    <span class="glyphicon glyphicon-align-justify icon"></span>
+                    </span>
+                  </div>
+                  <div class="collapse navbar-collapse" id="main-menu">
+                     <ul class="nav nav-pills nav-stacked navbar-primary nav-left">
+                      <li><a title="主页" href="/">主页</a></li>
+                      <% if (user) { %>
+                      <li><a title="上传" href="/upload">上传</a></li>
+                      <li><a title="发表" href="/post">发表</a></li>
+                      <li><a title="登出" href="/logout">登出</a></li>
+                      <% } else { %>
+                      <li><a title="登录" href="/login">登录</a></li>
+                      <li><a title="注册" href="/reg">注册</a></li>
+                      <% } %>
+                    </ul>   
+                 </div>
+        </div>
+      </nav>
+      <div class="col-sm-3 hidden-xs left">
+        <ul class="nav nav-pills nav-stacked navbar-primary nav-left">
+            <li><a title="主页" href="/">主页</a></li>
+            <% if (user) { %>
+            <li><a title="上传" href="/upload">上传</a></li>
+            <li><a title="发表" href="/post">发表</a></li>
+            <li><a title="登出" href="/logout">登出</a></li>
+            <% } else { %>
+            <li><a title="登录" href="/login">登录</a></li>
+            <li><a title="注册" href="/reg">注册</a></li>
+            <% } %>
+            <li><a href="">tel:15004610415</a></li>
+            <li><a href="">15004610415@163.com</a></li>
+            <li><a href="">tel:15004610415</a></li>
+            <li><a href="">tel:15004610415</a></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-9">
+        <h1 class="header"><%= title %></h1>
+        <article>
+          <% if (success) { %>
+          <div><%= success %></div>
+          <% } %>
+          <% if (error) { %>
+          <div><%= error %></div>
+          <% } %>
+
+  

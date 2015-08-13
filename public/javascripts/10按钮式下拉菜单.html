@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+	
+</head>
+<body>
+	<div class="container">
+		<div class="btn-group dropup">
+			<button type="button" class="btn btn-success">
+			下拉菜单
+			</button>
+			<button type="button" class="btn btn-success" data-toggle="dropdown">
+			<!-- 下拉菜单 -->
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</div>
+
+		<div class="btn-group">
+			<button type="button" class="btn btn-success btn-lg">
+			下拉菜单
+			</button>
+			<button type="button" class="btn btn-success btn-lg" data-toggle="dropdown">
+			<!-- 下拉菜单 -->
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</div>
+
+		<div class="btn-group">
+			<button type="button" class="btn btn-success btn-sm">
+			下拉菜单
+			</button>
+			<button type="button" class="btn btn-success btn-sm" data-toggle="dropdown">
+			<!-- 下拉菜单 -->
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Button with data-target
+</button>
+<div class="collapse" id="collapseExample">
+  <div class="well">
+    ...
+  </div>
+</div>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
