@@ -13,4 +13,9 @@
     "connect-flash":"*",
     "markdown":"*"
   }
+  ,
+  "engines":{
+    "node":"0.12.5",
+    "npm":"2.11.2"
+  }
 }
