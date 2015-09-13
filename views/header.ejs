@@ -5,11 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' /> -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-      <nav class="navbar-default visible-xs">
+    <!-- <div class="big-logo visible-xs">
+      <div class="col-xs-12 black-bg logo-left-container">
+        <h1 class="logo-left">坚</h1>
+      </div>
+      <div class="col-xs-12 white-bg logo-right-container">
+        <h1 class="logo-right">持</h1>
+      </div>      
+    </div>
+    <nav class="navbar-success visible-xs">
         <div class="col-sm-12">
                   <div class="navbar-header pull-right">
                     <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
@@ -30,8 +39,10 @@
                     </ul>   
                  </div>
         </div>
-      </nav>
-      <div class="col-sm-3 hidden-xs left">
+    </nav> -->
+
+      <div class="col-sm-3  left">
+        <h1 class="logo-left hidden-xs margin-bottom-60">坚</h1>
         <ul class="nav nav-pills nav-stacked navbar-primary nav-left">
             <li><a title="主页" href="/">主页</a></li>
             <% if (user) { %>
@@ -43,15 +54,15 @@
             <li><a title="注册" href="/reg">注册</a></li>
             <% } %>
             <li><a href="">tel:15004610415</a></li>
-            <li><a href="">15004610415@163.com</a></li>
-            <li><a href="">tel:15004610415</a></li>
-            <li><a href="">tel:15004610415</a></li>
+            <li><a href="https://github.com/xxza">github</a></li>
         </ul>
-        
       </div>
-      <div class="col-sm-9">
-        <h1 class="header"><%= title %></h1>
-        <article>
+      <div class="col-sm-9 white">
+        <h1 class="logo-right hidden-xs margin-bottom-60">持
+           <marquee behavior=alternate>前进是我唯一的方向</marquee>
+        </h1>
+        <h2 class="header"><%= title %></h2>
+        <article class="container">
           <% if (success) { %>
           <div><%= success %></div>
           <% } %>
